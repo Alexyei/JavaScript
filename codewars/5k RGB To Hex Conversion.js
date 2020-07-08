@@ -1,0 +1,11 @@
+console.log((300).toString(16).toUpperCase());
+r =127;
+console.log(Math.min(Math.max(0,r),255));
+r =255;
+console.log(Math.min(Math.max(0,r),255));
+r =300;
+console.log(Math.min(Math.max(0,r),255));
+r =0;
+console.log(Math.min(Math.max(0,r),255));
+r =-20;
+console.log(Math.min(Math.max(0,r),255));

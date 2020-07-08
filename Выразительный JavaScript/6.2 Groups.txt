@@ -1,0 +1,34 @@
+class Group {
+  constructor(){
+  	this.items = [];
+  }
+  has(item){
+  	return this.items.includes(item);
+  }
+  add(item){
+  	if (!this.has(item))
+      this.items.push(item);
+  }
+  delete(item){
+  	if (this.has(item))
+      this.items.splice(this.items.indexOf(item),1);
+  }
+  static from(iter){
+    let group = new Group();
+  	for(let item of iter){
+    	group.add(item);
+    }
+    return group;
+  }
+}
+
+let group = Group.from([10, 20]);
+
+console.log(group.has(10));
+// ? true
+console.log(group.has(30));
+// ? false
+group.add(10);
+group.delete(10);
+console.log(group.has(10));
+// ? false

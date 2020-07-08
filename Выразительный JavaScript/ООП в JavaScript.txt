@@ -1,0 +1,140 @@
+Прототип - это другой объект, используемый в качестве запасного источника свойств. Прототип почти всех объектов - Object.prototype. Прототип Object - null.
+
+Чтобы узнать какой прототип у объекта можно использовать метод - Object.getPrototypeOf или свойство объекта - __proto__. Второй вариант использовать не рекомендуеться.
+
+console.log(Object.getPrototypeOf(currentObj));
+console.log(currentObj.__proto__);
+
+Object.create используется для создания объекта с конкретным прототипом.
+
+let protoRabbit = {
+	speak(){
+	    console.log(`${this.type} кролик говорит: '${line}'`);
+	}
+}
+let killerRabbit = Object.create(protoRabbit);
+killerRabbit.type = "Боевой";
+killerRabbit.speak("ПИФ-ПАФ!");
+
+Для создания объекта могут использоваться функции-конструкторы:
+
+function makeRabbit(type){
+    let rabbit = Object.create(protoRabbit);
+    rabbit.type = type;
+    return rabbit;
+}
+
+Если поставить перед вызовом функции ключевое слово new, то функция будет считаться конструктором. Объект-прототип, используемый при построении объектов, определяется путём получения свойства prototype функции-конструктора. Конструкторы по-умолчанию получают свойство prototype которое содержит пустой объект, производный от Object.prototype. По соглашению имена конструкторов пишуться с большой буквы.
+
+function Rabbit(type){
+	this.type = type;
+}
+Rabbit.prototype.speak = function(line){
+	console.log(`The ${this.type} кролик говорит: '${line}'`);
+};
+let weirdRabbit = new Rabbit("Странный");
+
+// new
+// Rabbit.prototype = {};
+// Rabbit.prototype.speak = function(line){};
+// weirdRabbit.__proto__ = Rabbit.prototype;
+// Rabbit.prototype.constructor = Rabbit;
+
+В JavaScript функции - это тоже объекты поэтому в constructor могут быть записаны дополнительные функциии и поля. Массивы - тоже объекты.
+
+Классы в JavaScript - это функции-конструкторы со свойствами прототипа. Более удобный синтаксис классов:
+
+class Rabbit{
+	constructor(type){
+		this.type=type;
+}
+speak(line){
+	console.log(`${this.type} кролик говорит: '${line}'`);
+}
+}
+
+let killerRabbit = new Rabbit("Убйственный");
+let blackRabbit = new Rabbit("Чёрный");
+
+// class
+// Rabbit.prototype = {};
+// Rabbit.prototype.speak = speak(line){};
+// killerRabbit.__proto__ = Rabbit.prototype;
+// Rabbit.prototype.constructor = Rabbit;
+
+Данный синтаксис не поддерживает запись полей в прототип, но такие свойства можно создавать обращаясь напрямую к прототипу: Rabbit.prototype.x = 10;
+
+Подобно ключевому слову function, ключевое слово class может применяться как в инструкциях, так и в выражениях.
+let object = new class {getWord() {return "привет";}};
+
+class Temperature {
+    constructor(celsius) {
+        this.celsius = celsius;
+    }
+    get fahrenheit() {
+        return this.celsius * 1.8 + 32;
+    }
+    set fahrenheit(value) {
+        this.celsius = (value - 32) / 1.8;
+    }
+
+    static fromFahrenheit(value) {
+        return new Temperature((value - 32) / 1.8);
+    }
+}
+
+let temp = new Temperature(22);
+console.log(temp.fahrenheit);
+temp.fahrenheit = 86;
+console.log(temp.celsius);
+
+Статические методы записываются в constructor, геттеры и сеттеры в prototype. Статическим методам не доступно свойство this, они вызываются через имя класса: let nObj = Temperature.fromFahrenheit(71.6);
+
+//class
+//Temperature.prototype.fahrenheit = function(){}
+//Temperature.prototype.constructor.fromFahrenheit = function(){}
+
+var Matrix = class Matrix {
+    constructor(width, height, element = (x, y) => undefined) {
+        this.width = width;
+        this.height = height;
+        this.content = [];
+
+        for (let y = 0; y < height; y++) {
+            for (let x = 0; x < width; x++) {
+                this.content[y * width + x] = element(x, y);
+            }
+        }
+    }
+
+    get(x, y) {
+        return this.content[y * this.width + x];
+    }
+    set(x, y, value) {
+        this.content[y * this.width + x] = value;
+    }
+}
+
+var SymmetricMatrix = class SymmetricMatrix extends Matrix {
+    constructor(size, element = (x, y) => undefined) {
+        super(size, size, (x, y) => {
+            if (x < y) return element(y, x);
+            else return element(x, y);
+        });
+    }
+
+    set(x, y, value) {
+        super.set(x, y, value);
+        if (x != y) {
+            super.set(y, x, value);
+        }
+    }
+}
+
+var matrix = new SymmetricMatrix(5, (x, y) => `${x},${y}`);
+
+//SymmetricMatrix.prototype = Matrix;
+//SymmetricMatrix.prototype.constructor = function(){}
+//SymmetricMatrix.prototype.set = function(){}
+
+

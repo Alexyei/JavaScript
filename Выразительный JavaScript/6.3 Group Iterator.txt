@@ -1,0 +1,48 @@
+// Your code here (and the code from the previous exercise)
+class Group {
+  constructor(){
+  	this.items = [];
+  }
+  has(item){
+  	return this.items.includes(item);
+  }
+  add(item){
+  	if (!this.has(item))
+      this.items.push(item);
+  }
+  delete(item){
+  	if (this.has(item))
+      this.items.splice(this.items.indexOf(item),1);
+  }
+  static from(iter){
+    let group = new Group();
+  	for(let item of iter){
+    	group.add(item);
+    }
+    return group;
+  }
+}
+ class GroupIterator{
+ 	constructor(group){
+    	this.current = 0;
+      	this.items=group.items;
+    }
+   next(){
+        if (this.current == this.items.length)
+            return {done: true};
+        
+        let value = this.items[this.current++];
+        return {value, done:false};
+    }
+ }
+
+Group.prototype[Symbol.iterator] = function(){
+	return new GroupIterator(this);
+};
+
+for (let value of Group.from(["a", "b", "c"])) {
+  console.log(value);
+}
+// ? a
+// ? b
+// ? c
