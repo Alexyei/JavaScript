@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96bfe71-6110-4f88-bb37-ce298b75094c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4k Sum Strings as Numbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/4k Sum Strings as Numbers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Node.js.4k Sum Strings as Numbers.js">
     <configuration name="4k Human readable duration format.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4k Human readable duration format.js" working-dir="$PROJECT_DIR$">
@@ -95,6 +94,7 @@
       <workItem from="1594136318386" duration="1990000" />
       <workItem from="1594199646867" duration="2429000" />
       <workItem from="1594217992857" duration="4175000" />
+      <workItem from="1594394254768" duration="1402000" />
     </task>
     <servers />
   </component>
@@ -102,10 +102,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593624466509">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594394347419">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1593624466509" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594394347419" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594394364070">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1594394364070" />
     <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1594223170480">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -170,9 +174,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1594223170481" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594217992433">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1594397125452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594217992433" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594397125452" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594394299946">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594394299946" />
   </component>
 </project>
