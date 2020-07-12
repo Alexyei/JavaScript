@@ -1,12 +1,46 @@
-"use strict"
-function filterRangeInPlace(arr, start, end){
-   let range = arr.filter(value => value>=start && value<=end);
-    arr.length = 0;
-    range.forEach((item)=>arr.push(item));
+'use strict';
+
+let options = {
+    title: "My menu",
+    items: ["Item1", "Item2"]
+};
+
+function showMenu({
+                      title = "Untitled",
+                      width: w = 100,  // width присваиваем в w
+                      height: h = 200, // height присваиваем в h
+                      items: [item1, item2] // первый элемент items присваивается в item1, второй в item2
+                  ,...rest}) {
+    console.log( `${title} ${w} ${h}` ); // My Menu 100 200
+    console.log( item1 ); // Item1
+    console.log( item2 ); // Item2
+    console.log( rest); // Item2
 }
-let arr = [5, 3, 8, 1];
+showMenu(options);
+options.descripton ="Описание";
+showMenu(options);
 
-filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+let user = { name: "John", years: 30 };
 
-console.log( arr ); // [3, 1]
-console.log(+'0000');
+// ваш код должен быть с левой стороны:
+let {name, years:age,isAdmin=false} = user;
+console.log( name ); // John
+console.log( age ); // 30
+console.log( isAdmin ); // false
+
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+};
+
+let max = [null,0];
+for (const [key, value] of Object.entries(salaries)) {
+    if (value >= max[1])
+        max = [key, value];
+}
+
+console.log(max[0]);
+salaries = {};
+max = [null,0];
+console.log(max[0]);
