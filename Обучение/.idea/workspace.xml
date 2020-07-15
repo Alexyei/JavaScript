@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/alert.js" afterDir="false" />
-    </list>
+    <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -86,6 +83,7 @@
       <workItem from="1594576279625" duration="1506000" />
       <workItem from="1594730431155" duration="682000" />
       <workItem from="1594815199763" duration="1812000" />
+      <workItem from="1594818145358" duration="26000" />
     </task>
     <servers />
   </component>
@@ -113,9 +111,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594818092663" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594815220611">
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594818144678">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594815220611" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594818144678" />
   </component>
 </project>
