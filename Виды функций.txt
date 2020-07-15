@@ -1,0 +1,5 @@
+1. Function Declaration
+2. Function Expression
+3. Named Function Expression (NFE)
+4. Lambda (стрелочные функции)
+5. new Function()

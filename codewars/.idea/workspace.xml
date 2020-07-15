@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96bfe71-6110-4f88-bb37-ce298b75094c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4k latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5k Moving Zeros To The End.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5k west east north south.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Обучение/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Обучение/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Обучение/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Обучение/alert.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,29 +41,29 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Node.js.4k latin.js">
-    <configuration name="4k Human readable duration format.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4k Human readable duration format.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.5k west east north south.js">
     <configuration name="4k Sum Strings as Numbers.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4k Sum Strings as Numbers.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="4k latin.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4k latin.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="4k snail.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4k snail.js" working-dir="$PROJECT_DIR$">
+    <configuration name="5k Human readable time.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5k Human readable time.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="5k Human readable time.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5k Human readable time.js" working-dir="$PROJECT_DIR$">
+    <configuration name="5k Moving Zeros To The End.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5k Moving Zeros To The End.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="5k west east north south.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5k west east north south.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.5k west east north south.js" />
+        <item itemvalue="Node.js.5k Moving Zeros To The End.js" />
         <item itemvalue="Node.js.4k latin.js" />
         <item itemvalue="Node.js.4k Sum Strings as Numbers.js" />
         <item itemvalue="Node.js.5k Human readable time.js" />
-        <item itemvalue="Node.js.4k snail.js" />
-        <item itemvalue="Node.js.4k Human readable duration format.js" />
       </list>
     </recent_temporary>
   </component>
@@ -98,6 +101,8 @@
       <workItem from="1594394254768" duration="1402000" />
       <workItem from="1594569825122" duration="639000" />
       <workItem from="1594649929338" duration="1716000" />
+      <workItem from="1594662490727" duration="1707000" />
+      <workItem from="1594739458479" duration="1609000" />
     </task>
     <servers />
   </component>
@@ -113,22 +118,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1594394364070" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1594653589161">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1594750042351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594653589161" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1594653589161">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594750042351" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1594750042351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594653589161" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1594653589161">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594750042351" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1594750042351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594653589161" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1594653589161">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594750042351" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1594750042351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594653589161" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594750042351" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594223170480">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -181,9 +186,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594397125452" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594650317429">
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594739461333">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594650317429" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594739461333" />
   </component>
 </project>
