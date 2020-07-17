@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="" />
+    <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../codewars/4k Sudoku Solution Validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Запланировать выполнение функции.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codewars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../codewars/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,12 +41,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.Запланировать выполнение функции.js">
+    <configuration name="Запланировать выполнение функции.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Запланировать выполнение функции.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="alert.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/alert.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.Запланировать выполнение функции.js" />
         <item itemvalue="Node.js.alert.js" />
       </list>
     </recent_temporary>
@@ -84,6 +93,7 @@
       <workItem from="1594730431155" duration="682000" />
       <workItem from="1594815199763" duration="1812000" />
       <workItem from="1594818145358" duration="26000" />
+      <workItem from="1594920746100" duration="1701000" />
     </task>
     <servers />
   </component>
@@ -95,25 +105,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1593452768097" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1594818092663">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1594928196793">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594818092663" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1594818092663">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594928196793" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1594928196793">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594818092663" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1594818092663">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594928196793" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1594928196793">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594818092663" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1594818092663">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594928196793" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1594928196793">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594818092663" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594818144678">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594928196793" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1594920769825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594818144678" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594920769825" />
   </component>
 </project>
