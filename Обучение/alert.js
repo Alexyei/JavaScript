@@ -34,3 +34,7 @@ console.log(sum1(5)(-1)(2) == 6);
 console.log(sum1(6)(-1)(-2)(-3) == 0);
 console.log(sum1(0)(1)(2)(3)(4)(5) == 15);
 console.log(sum1.value);
+
+function sayHi() {
+    console.log(this);
+}
