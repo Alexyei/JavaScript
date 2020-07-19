@@ -1,0 +1,1 @@
+let clone = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj));
