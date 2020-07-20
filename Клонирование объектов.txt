@@ -1,1 +1,4 @@
 let clone = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj));
+
+// клон obj c тем же прототипом (с поверхностным копированием свойств)
+let clone = Object.create(Object.getPrototypeOf(obj), Object.getOwnPropertyDescriptors(obj));
