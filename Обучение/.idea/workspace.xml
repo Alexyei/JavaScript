@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trycatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codewars" />
   </component>
   <component name="RunManager" selected="Node.js.trycatch.js">
     <configuration name="Добавление метода к простейшему объекту.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Добавление метода к простейшему объекту.js" working-dir="$PROJECT_DIR$">
@@ -133,6 +132,7 @@
       <workItem from="1595316718842" duration="905000" />
       <workItem from="1595344150502" duration="3401000" />
       <workItem from="1595525454773" duration="1296000" />
+      <workItem from="1595611023847" duration="122000" />
     </task>
     <servers />
   </component>
@@ -152,6 +152,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="710" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1595355414264" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1595611145074">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595611145074" />
     <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1595584253867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -216,10 +220,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1595584253869" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1595344214306">
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1595611034717">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595344214306" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595611034717" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -252,7 +256,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/trycatch.js</url>
           <line>4</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
