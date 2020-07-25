@@ -58,6 +58,7 @@ function dividedBy() {
 // console.log(zero());
 // console.log(zero(plus(zero())));
 //console.log(zero(plus(zero())));
+
 console.log(three(dividedBy(two())));
 
 console.log(seven(times(five()))); // must return 35
