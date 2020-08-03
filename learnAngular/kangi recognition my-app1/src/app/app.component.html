@@ -1,0 +1,10 @@
+<h3>Draw a kanji please</h3>
+<lib-kanji-recognition #kr [width]="400" [color]="'magenta'" [height]="250" (done)="suggestions = $event">
+  Canvas isn't supported in this browser
+</lib-kanji-recognition>
+<button (click)="kr.clear()">Clear</button>
+
+<h3>List of suggestions</h3>
+<ul>
+  <li *ngFor="let kanji of suggestions">{{kanji}}</li>
+</ul>
