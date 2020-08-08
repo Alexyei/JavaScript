@@ -29,6 +29,7 @@ import {throttleTime, switchMap} from 'rxjs/operators';
 export class KanjiRecognitionComponent implements AfterViewInit {
   // @ViewChild('canvas'), @Input(), @Output() декораторы свойств
   @ViewChild('canvas') canvas: ElementRef;
+  // @Input() получение значения параметров из html;
   @Input() width = 400;
   @Input() height = 350;
   @Input() lineWidth = 5;
@@ -53,7 +54,7 @@ export class KanjiRecognitionComponent implements AfterViewInit {
   data = [];
 
   // element это параметр типа ElementRef
-  // private http: HttpClient это параметр типа HttpClient,
+  // private http: HttpClient это параметр типа HttpClient (Angular),
   // для хранения значения которого создаётся private поле с тем же именем в данном классе
   constructor(element: ElementRef, private http: HttpClient) {
     this.nativeElement = element.nativeElement;
@@ -74,6 +75,7 @@ export class KanjiRecognitionComponent implements AfterViewInit {
         stroke[2].push(Date.now() - this.timerStart);
         this.moveSub = fromEvent(this.nativeElement, 'mousemove')
           .pipe(
+            // задержка 20 мс перед повторным вызовом mouse move
             throttleTime(20),
             switchMap(({clientX, clientY}) => {
               clientX = clientX - this.hostRect.x;
@@ -140,6 +142,10 @@ export class KanjiRecognitionComponent implements AfterViewInit {
       ]
     };
 
+    this.post('https://inputtools.google.com/request?itc=ja-t-i0-handwrit&app=translate', null, res => {
+      console.log('Vanilla Post');
+      console.log(res);
+    });
     this.http
       .post<any>(
         'https://inputtools.google.com/request?itc=ja-t-i0-handwrit&app=translate',
@@ -157,6 +163,29 @@ export class KanjiRecognitionComponent implements AfterViewInit {
         },
         error => this.httpError.emit(error)
       );
+  }
+
+  private post(url, data, callback): void {
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function() {
+      let readyState = xhr.readyState;
+
+      if (readyState == 4) {
+        callback(xhr);
+      }
+    };
+
+    let queryString = '';
+    if (typeof data === 'object') {
+      for (let propertyName in data) {
+        queryString += (queryString.length === 0 ? '' : '&') + propertyName + '=' + encodeURIComponent(data[propertyName]);
+      }
+    }
+
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+    xhr.send(queryString);
   }
 
   public clear(): void {
