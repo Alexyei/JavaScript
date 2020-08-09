@@ -38,3 +38,4 @@ console.log(sum1.value);
 function sayHi() {
     console.log(this);
 }
+

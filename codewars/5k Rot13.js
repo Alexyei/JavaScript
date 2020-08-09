@@ -15,5 +15,4 @@ function rot13(str) {
                       char=>alphabet[(alphabet.indexOf(char.toUpperCase())+13)%26].toLowerCase());
 
 }
-
 console.log(rot13("TeSt!"));
