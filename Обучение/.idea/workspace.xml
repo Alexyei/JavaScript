@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DOM.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codewars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../codewars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codewars/5k Rot13.js" beforeDir="false" afterPath="$PROJECT_DIR$/../codewars/5k Rot13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../codewars" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Node.js.alert.js">
     <configuration name="Статические методы.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Статические методы.js" working-dir="$PROJECT_DIR$">
@@ -140,6 +137,7 @@
       <workItem from="1595525454773" duration="1296000" />
       <workItem from="1595611023847" duration="122000" />
       <workItem from="1596996473946" duration="1935000" />
+      <workItem from="1597045272984" duration="3111000" />
     </task>
     <servers />
   </component>
@@ -227,10 +225,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1595584253869" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1596996516932">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1597045586050">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596996516932" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597045586050" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1597045301040">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045301040" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
