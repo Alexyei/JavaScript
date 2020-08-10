@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOM свойства узлов.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOM свойства узлов.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Получить атрибут.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +57,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../codewars" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Node.js.alert.js">
+  <component name="RunManager" selected="Node.js.DOM свойства узлов.js">
     <configuration name="Статические методы.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Статические методы.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="DOM свойства узлов.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/DOM свойства узлов.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="Классы.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Классы.js" working-dir="$PROJECT_DIR$">
@@ -72,19 +76,16 @@
     <configuration name="alert.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/alert.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="sum.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/sum.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
     <configuration name="trycatch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/trycatch.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.DOM свойства узлов.js" />
         <item itemvalue="Node.js.alert.js" />
         <item itemvalue="Node.js.trycatch.js" />
         <item itemvalue="Node.js.Статические методы.js" />
         <item itemvalue="Node.js.Классы.js" />
-        <item itemvalue="Node.js.sum.js" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +139,7 @@
       <workItem from="1595611023847" duration="122000" />
       <workItem from="1596996473946" duration="1935000" />
       <workItem from="1597045272984" duration="3111000" />
+      <workItem from="1597074375444" duration="4505000" />
     </task>
     <servers />
   </component>
@@ -161,22 +163,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595611145074" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1596998420022">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1597080392033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596998420022" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1596998420022">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597080392033" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1597080392033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596998420022" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1596998420022">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597080392033" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1597080392033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596998420022" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1596998420022">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597080392033" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1597080392033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596998420022" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597080392033" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1595584253868">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -229,10 +231,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597045586050" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1597045301040">
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1597074399514">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597045301040" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597074399514" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
