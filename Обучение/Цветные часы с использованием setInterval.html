@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- клик по этой кнопке вызовет clockStart() -->
+<input type="button" onclick="clockStart()" value="Старт">
+
+<!-- клик по этой кнопке вызовет clockStop() -->
+<input type="button" onclick="clockStop()" value="Стоп">
+<script>
+    let clock = document.createElement("div");
+    clock.innerHTML = "<span></span>:<span></span>:<span></span>";
+    clock.children[0].style.color = "red";
+    clock.children[1].style.color = "green";
+    clock.children[2].style.color = "blue";
+
+    let timerId;
+    clockStart();
+    document.body.prepend(clock);
+
+
+    function clockStart() {
+        timeToDocument();
+        timerId = setInterval(()=>{
+            timeToDocument();
+        },1000);
+    }
+
+    function timeToDocument() {
+        let now = new Date();
+
+        clock.children[0].innerHTML = now.getHours().toString().padStart(2,"0");
+        clock.children[1].innerHTML = now.getMinutes().toString().padStart(2,"0");
+        clock.children[2].innerHTML = now.getSeconds().toString().padStart(2,"0");
+    }
+
+    function clockStop() {
+        clearInterval(timerId);
+    }
+</script>
+</body>
+</html>

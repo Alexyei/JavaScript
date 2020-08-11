@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #E6E6E6;
+        }
+    </style>
+</head>
+<body>
+<div id="calendar"></div>
+
+<script>
+    function createCalendar(elem, year, month) {
+        let date = new Date(year, month, 0);
+
+        // количество дней в месяце
+        let daysInMonth = date.getDate();
+
+        date = new Date(year, month - 1, 1);
+        //день недели
+        // по-умолчанию воскресенье == 0, теперь пн == 0
+        console.log(date.getDay());
+        let weekday = (date.getDay()+6)%7;
+
+        let table = document.createElement("table");
+        let tableHeader = document.createElement("tr");
+        tableHeader.innerHTML = "<th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th>"
+        table.append(tableHeader);
+
+
+        let rowCount = Math.ceil((daysInMonth-(7 - weekday))/7)+1;
+
+        for(let i=0;i<rowCount;++i){
+            let tr = table.insertRow();
+            for (let j=0;j<7;++j)
+                tr.insertCell();
+        }
+        //table.rows[0].cells[0].innerHTML="ntrcn";
+        // let k =1;
+        // while(weekday<7)
+        //     table.rows[1].cells[weekday++].innerHTML=(k++).toString();
+        // while (k<=daysInMonth){
+        //
+        // }
+
+        let rowi = 1;
+        let coli = weekday;
+        for(let i=1;i<=daysInMonth;++i){
+            table.rows[rowi].cells[coli++].innerHTML = i.toString();
+            if(coli===7)
+            {
+                ++rowi;
+                coli=0;
+            }
+        }
+        elem.append(table);
+    }
+
+    createCalendar(calendar, 2012, 9);
+    createCalendar(calendar, 2012, 10);
+</script>
+
+</body>
+</html>

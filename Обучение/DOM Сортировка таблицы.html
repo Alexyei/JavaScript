@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Pete</td>
+        <td>Brown</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Ann</td>
+        <td>Lee</td>
+        <td>5</td>
+    </tr>
+</table>
+
+<script>
+    let trs = document.querySelectorAll("tr:nth-child(n+2)");
+    for (let i = 0; i < trs.length - 1; ++i)
+        for (let j = i + 1; j < trs.length; ++j)
+            if (trs[i].children[1].innerHTML > trs[j].children[1].innerHTML)
+                trs[j].after(trs[i]);
+</script>
+</body>
+</html>
