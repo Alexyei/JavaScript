@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #field {
+            width: 200px;
+            height: 150px;
+            border: 10px solid black;
+            background-color: #00FF00;
+            overflow: hidden;
+            position: relative;
+        }
+        #ball{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body style="height:2000px">
+
+Нажмите на поле для перемещения мяча.
+<br> Мяч не должен выходить за границы поля.
+
+
+<div id="field">
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+</div>
+
+<script>
+    function OnClick(event) {
+        let fieldCoords = this.getBoundingClientRect();
+
+        //console.log(event);
+        // console.log(field.clientLeft);
+        // console.log(field.clientTop);
+        // console.log(pageXOffset);
+        // console.log(pageYOffset);
+        let x = event.clientX-fieldCoords.left-field.clientLeft-ball.clientWidth / 2;
+        let y = event.clientY-fieldCoords.top-field.clientTop-ball.clientHeight / 2;
+
+        console.log(x,y);
+        // console.log(field.clientWidth);
+        // console.log(field.clientHeight);
+
+        // запрещаем пересекать верхнюю границу поля
+        if (y < 0) y = 0;
+
+        // запрещаем пересекать левую границу поля
+        if (x < 0) x = 0;
+
+        // if (x<10)
+        //     x=10;
+        // else if (x>field.clientWidth-10)
+        //     x=field.clientWidth-10;
+        //
+        // if (y<10)
+        //     x=10;
+        // else if (y>field.clientHeight-10)
+        //     y=field.clientHeight-10;
+
+        // // запрещаем пересекать правую границу поля
+        if (x + ball.clientWidth > field.clientWidth) {
+            x = field.clientWidth - ball.clientWidth;
+        }
+
+        // запрещаем пересекать нижнюю границу поля
+        if (y + ball.clientHeight > field.clientHeight) {
+            y = field.clientHeight - ball.clientHeight;
+        }
+
+        ball.style.left=x+"px";
+        ball.style.top=y+"px";
+    }
+
+    field.addEventListener("click", OnClick);
+    //ball.style.left="170px";
+</script>
+</body>
+</html>
