@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DOM галерея изображений (без слайдера).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM делигирование событий.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM отмена браузерного события по-умолчанию.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM передвижение мяча по полю.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM получение координат элементов.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM расположите заметку внутри элемента (абсолютное позиционирование).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM расположить заметку относительно другого элемента position absolute.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOM расположить заметку относительно другого элемента.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gallery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOM выделение элементов списка.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,6 +142,7 @@
       <workItem from="1597390519680" duration="4201000" />
       <workItem from="1597498530334" duration="930000" />
       <workItem from="1597574418060" duration="3505000" />
+      <workItem from="1597596533195" duration="2230000" />
     </task>
     <servers />
   </component>
