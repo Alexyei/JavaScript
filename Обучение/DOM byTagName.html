@@ -6,10 +6,33 @@
 
 <script>
     function byTagName(node, tagName) {
-        console.log(Array.from(node.children));
-        return Array.from(node.children).filter((el)=>el.tagName.toLowerCase() === tagName);
+        //console.log(Array.from(node.children).filter((el) => el.tagName.toLowerCase() === tagName));
+        //console.log(Array.from(node.children).map((child) => byTagName(child, tagName)));
+        //console.log("tagName"+node.toString());
+        let result = Array.from(node.children).filter((el) => el.tagName.toLowerCase() === tagName);
+        //return Array.from(node.children).map((child) => byTagName(child, tagName));
+
+        for(let child of node.children){
+
+            // if (node===document.body){
+            //     console.log(result);
+            // }
+            result.push(...byTagName(child,tagName));
+            // if (node===document.body){
+            //     console.log(byTagName(child,tagName));
+            //     //console.log(result);
+            // }
+
+        }
+
+        //return Array.from(node.children).filter((el) => el.tagName.toLowerCase() === tagName)
+        //    .push(...Array.from(node.children).map((child) => byTagName(child, tagName)));
+        //return 1;
+
+        return result;
     }
 
+    //console.log(byTagName(document.body, "h1"));
     console.log(byTagName(document.body, "h1").length);
     // → 1
     console.log(byTagName(document.body, "span").length);
