@@ -1,0 +1,41 @@
+<!doctype html>
+<meta charset="utf-8">
+<p>🎈</p>
+
+<script>
+    let balloon = document.querySelector("p");
+    balloon.style.marginTop = "0";
+
+    function OnKeyDown(event) {
+        let balloonFontSize = getComputedStyle(balloon).fontSize;
+        switch (event.key) {
+            case "ArrowUp":
+
+                // console.log(balloon.style.fontSize);
+                // console.log(balloon.style.fontSize.substr(0, balloon.style.fontSize.length - 2));
+                // console.log(balloon.style.fontSize.substr(0, balloon.style.fontSize.length - 2) * 1.1);
+                // console.log(balloon.style.fontSize.substr(balloon.style.fontSize.length - 2));
+                console.log(balloonFontSize.substr(0, balloonFontSize.length - 2) * 1.1
+                    + balloonFontSize.substr(balloonFontSize.length - 2));
+                // balloon.style.fontSize = balloon.style.fontSize.substr(0, balloon.style.fontSize.length - 2) * 1.1
+                //     + balloon.style.fontSize.substr(balloon.style.fontSize.length - 2);
+                if (balloonFontSize.substr(0, balloonFontSize.length - 2) * 1.1>100){
+                    balloon.innerText = '💥';
+                    document.body.removeEventListener("keydown", OnKeyDown);
+                    break;
+                }
+                console.log("stop");
+                balloon.style.fontSize = balloonFontSize.substr(0, balloonFontSize.length - 2) * 1.1
+                    + balloonFontSize.substr(balloonFontSize.length - 2);
+                break;
+            case "ArrowDown":
+
+                console.log(balloonFontSize.substr(0, balloonFontSize.length - 2) * 0.9
+                    + balloonFontSize.substr(balloonFontSize.length - 2));
+                balloon.style.fontSize = balloonFontSize.substr(0, balloonFontSize.length - 2) * 0.9
+                    + balloonFontSize.substr(balloonFontSize.length - 2);
+                break;
+        }
+    }
+    document.body.addEventListener("keydown", OnKeyDown);
+</script>
