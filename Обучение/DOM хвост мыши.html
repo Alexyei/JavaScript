@@ -1,0 +1,62 @@
+<!doctype html>
+
+<style>
+    .trail { /* className for the trail elements */
+        position: absolute;
+        height: 60px; width: 60px;
+        border-radius: 35px;
+        background: teal;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid;
+    }
+    body {
+        height: 300px;
+    }
+</style>
+<body>
+<script>
+    let dots = [];
+
+    function addDot(dot){
+        document.body.append(dot);
+        dots.push(dot);
+        for (let i =0;i<dots.length-1;++i)
+        {
+            dots[i].style.opacity = (10 - dots.length+i+1)*10+"%";
+            console.log((10 - i -1)*10+"%");
+        }
+
+        if (dots.length === 10){
+            dots[0].remove();
+            dots.shift();
+        }
+    }
+
+    let scheduled = null;
+    document.body.addEventListener("mousemove",(event)=>{
+        if (!scheduled){
+            setTimeout(()=>{
+                let dot = document.createElement("div");
+                dot.classList.add("trail");
+                dot.style.left=event.clientX+"px";
+                dot.style.top = event.clientY + "px";
+                dot.style.background = getRandomColor();
+                addDot(dot);
+                scheduled = null;
+            },50);
+        }
+        scheduled = event;
+    });
+
+    function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+</script>
+</body>
+
