@@ -1,0 +1,39 @@
+<!doctype html>
+
+<tab-panel>
+    <div data-tabname="one">Tab one</div>
+    <div data-tabname="two">Tab two</div>
+    <div data-tabname="three">Tab three</div>
+</tab-panel>
+<script>
+    function asTabs(node) {
+        let buttonsPanel = document.createElement("div");
+        for (let child of node.children){
+            let button = document.createElement("button");
+            button.innerText = child.dataset.tabname;
+            buttonsPanel.append(button);
+            child.style.display="none";
+        }
+        node.prepend(buttonsPanel);
+        
+        let currentTab = document.querySelector("tab-panel button");
+        currentTab.style.color="red";
+        document.querySelector(`tab-panel [data-tabname="${currentTab.innerText}"]`).style.display="";
+
+        buttonsPanel.addEventListener("click",(event)=>{
+            if (event.target.tagName === "BUTTON" && event.target !== currentTab){
+                currentTab.style.color = "";
+                document.querySelector(`tab-panel [data-tabname="${currentTab.innerText}"]`).style.display="none";
+
+                currentTab = event.target;
+                currentTab.style.color="red";
+                document.querySelector(`tab-panel [data-tabname="${currentTab.innerText}"]`).style.display="";
+            }
+        });
+
+
+
+
+    }
+    asTabs(document.querySelector("tab-panel"));
+</script>

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650c47cd-a0fc-4ead-a8b1-a5625b830f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DOM хвост мыши.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOM 15.3 создание вкладок.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Тормозящий (throttling) декоратор.js" beforeDir="false" afterPath="$PROJECT_DIR$/Тормозящий (throttling) декоратор.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +147,7 @@
       <workItem from="1598081207489" duration="1985000" />
       <workItem from="1598108904862" duration="5846000" />
       <workItem from="1598204846007" duration="4270000" />
+      <workItem from="1598254431270" duration="3132000" />
     </task>
     <servers />
   </component>
