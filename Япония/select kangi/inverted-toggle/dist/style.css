@@ -1,0 +1,289 @@
+body {
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.container {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  border-radius: 25px;
+  box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: -webkit-transform 50ms;
+  transition: -webkit-transform 50ms;
+  transition: transform 50ms;
+  transition: transform 50ms, -webkit-transform 50ms;
+  width: 100px;
+}
+.container:active {
+  -webkit-transform: scale(0.73);
+          transform: scale(0.73);
+}
+.fill {
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.fill1 {
+  background-color: #fff;
+  -webkit-clip-path: circle(19px at 73px 25px);
+          clip-path: circle(19px at 73px 25px);
+}
+.fill2 {
+  -webkit-animation: right2 500ms both;
+          animation: right2 500ms both;
+  background-color: #000;
+  -webkit-clip-path: circle(19px at 25px 25px);
+          clip-path: circle(19px at 25px 25px);
+}
+.circle {
+  background: #fff;
+  border-radius: 20px;
+  height: 38px;
+  position: relative;
+  top: 6px;
+  width: 38px;
+}
+.circle1 {
+  background-color: #000;
+  left: 6px;
+}
+.circle2 {
+  -webkit-animation: right4 500ms both;
+          animation: right4 500ms both;
+  background-color: #fff;
+  left: 54px;
+}
+.drop {
+  -webkit-animation: right2d 500ms both;
+          animation: right2d 500ms both;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.active .fill1 {
+  -webkit-animation: left1 500ms both;
+          animation: left1 500ms both;
+}
+.active .fill2 {
+  -webkit-animation: left2 500ms both;
+          animation: left2 500ms both;
+}
+.active .circle1 {
+  -webkit-animation: left3 500ms both;
+          animation: left3 500ms both;
+}
+.active .circle2 {
+  -webkit-animation: left4 500ms both;
+          animation: left4 500ms both;
+}
+.active .drop {
+  -webkit-animation: leftd 500ms both;
+          animation: leftd 500ms both;
+}
+@-webkit-keyframes left1 {
+  0% {
+    -webkit-clip-path: circle(19px at 73px 25px);
+            clip-path: circle(19px at 73px 25px);
+  }
+  99% {
+    -webkit-clip-path: circle(74px at 73px 25px);
+            clip-path: circle(74px at 73px 25px);
+  }
+  100% {
+    -webkit-clip-path: circle(74px at 73px 25px);
+            clip-path: circle(74px at 73px 25px);
+  }
+}
+@keyframes left1 {
+  0% {
+    -webkit-clip-path: circle(19px at 73px 25px);
+            clip-path: circle(19px at 73px 25px);
+  }
+  99% {
+    -webkit-clip-path: circle(74px at 73px 25px);
+            clip-path: circle(74px at 73px 25px);
+  }
+  100% {
+    -webkit-clip-path: circle(74px at 73px 25px);
+            clip-path: circle(74px at 73px 25px);
+  }
+}
+@-webkit-keyframes left2 {
+  0% {
+    -webkit-clip-path: circle(74px at 25px 25px);
+            clip-path: circle(74px at 25px 25px);
+  }
+  99% {
+    -webkit-clip-path: circle(19px at 25px 25px);
+            clip-path: circle(19px at 25px 25px);
+  }
+  100% {
+    -webkit-clip-path: circle(19px at 25px 25px);
+            clip-path: circle(19px at 25px 25px);
+  }
+}
+@keyframes left2 {
+  0% {
+    -webkit-clip-path: circle(74px at 25px 25px);
+            clip-path: circle(74px at 25px 25px);
+  }
+  99% {
+    -webkit-clip-path: circle(19px at 25px 25px);
+            clip-path: circle(19px at 25px 25px);
+  }
+  100% {
+    -webkit-clip-path: circle(19px at 25px 25px);
+            clip-path: circle(19px at 25px 25px);
+  }
+}
+@-webkit-keyframes left3 {
+  0% {
+    left: 14px;
+  }
+  99% {
+    left: 6px;
+  }
+  100% {
+    left: 6px;
+  }
+}
+@keyframes left3 {
+  0% {
+    left: 14px;
+  }
+  99% {
+    left: 6px;
+  }
+  100% {
+    left: 6px;
+  }
+}
+@-webkit-keyframes left4 {
+  0% {
+    left: 54px;
+  }
+  99% {
+    left: 46px;
+  }
+  100% {
+    left: 46px;
+  }
+}
+@keyframes left4 {
+  0% {
+    left: 54px;
+  }
+  99% {
+    left: 46px;
+  }
+  100% {
+    left: 46px;
+  }
+}
+@-webkit-keyframes leftd {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes leftd {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes right2 {
+  0% {
+    -webkit-clip-path: circle(19px at 25px 25px);
+            clip-path: circle(19px at 25px 25px);
+  }
+  99% {
+    -webkit-clip-path: circle(74px at 25px 25px);
+            clip-path: circle(74px at 25px 25px);
+  }
+  100% {
+    -webkit-clip-path: circle(74px at 25px 25px);
+            clip-path: circle(74px at 25px 25px);
+  }
+}
+@keyframes right2 {
+  0% {
+    -webkit-clip-path: circle(19px at 25px 25px);
+            clip-path: circle(19px at 25px 25px);
+  }
+  99% {
+    -webkit-clip-path: circle(74px at 25px 25px);
+            clip-path: circle(74px at 25px 25px);
+  }
+  100% {
+    -webkit-clip-path: circle(74px at 25px 25px);
+            clip-path: circle(74px at 25px 25px);
+  }
+}
+@-webkit-keyframes right2d {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes right2d {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes right4 {
+  0% {
+    left: 46px;
+  }
+  99% {
+    left: 54px;
+  }
+  100% {
+    left: 54px;
+  }
+}
+@keyframes right4 {
+  0% {
+    left: 46px;
+  }
+  99% {
+    left: 54px;
+  }
+  100% {
+    left: 54px;
+  }
+}

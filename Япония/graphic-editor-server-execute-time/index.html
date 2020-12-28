@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Графический редактор v.1.2 server</title>
+    <style>
+        canvas{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+<!--Картинка для теста скорости рисования-->
+<!--<img src="img.jpg" alt="">-->
+<div id="canvas">
+
+</div>
+<button id="clear">Очистить холст</button>
+<button id="server">Отправить данные</button>
+<button id="test-server">Тестовый запрос</button>
+<script src="paint.js"></script>
+<script src="serverOBF.js"></script>
+<script src="test-server.js"></script>
+</body>
+</html>

@@ -62,6 +62,7 @@ export class KanjiRecognitionComponent implements AfterViewInit {
     fromEvent(this.nativeElement, 'mousedown').subscribe(
       ({clientX: x, clientY: y}) => {
         if (!this.timerStart) {
+          console.log('new timer');
           this.timerStart = Date.now();
         }
         this.updateRect();
@@ -91,6 +92,7 @@ export class KanjiRecognitionComponent implements AfterViewInit {
           .subscribe(_ => {
             this.moveSub.unsubscribe();
             this.data.push(stroke);
+            console.log(this.data);
             this.sendData();
           });
       }
@@ -142,10 +144,10 @@ export class KanjiRecognitionComponent implements AfterViewInit {
       ]
     };
 
-    this.post('https://inputtools.google.com/request?itc=ja-t-i0-handwrit&app=translate', null, res => {
-      console.log('Vanilla Post');
-      console.log(res);
-    });
+    // this.post('https://inputtools.google.com/request?itc=ja-t-i0-handwrit&app=translate', null, res => {
+    //   console.log('Vanilla Post');
+    //   console.log(res);
+    // });
     this.http
       .post<any>(
         'https://inputtools.google.com/request?itc=ja-t-i0-handwrit&app=translate',
@@ -165,28 +167,28 @@ export class KanjiRecognitionComponent implements AfterViewInit {
       );
   }
 
-  private post(url, data, callback): void {
-    let xhr = new XMLHttpRequest();
-
-    xhr.onreadystatechange = function() {
-      let readyState = xhr.readyState;
-
-      if (readyState == 4) {
-        callback(xhr);
-      }
-    };
-
-    let queryString = '';
-    if (typeof data === 'object') {
-      for (let propertyName in data) {
-        queryString += (queryString.length === 0 ? '' : '&') + propertyName + '=' + encodeURIComponent(data[propertyName]);
-      }
-    }
-
-    xhr.open('POST', url, true);
-    xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
-    xhr.send(queryString);
-  }
+  // private post(url, data, callback): void {
+  //   let xhr = new XMLHttpRequest();
+  //
+  //   xhr.onreadystatechange = function() {
+  //     let readyState = xhr.readyState;
+  //
+  //     if (readyState == 4) {
+  //       callback(xhr);
+  //     }
+  //   };
+  //
+  //   let queryString = '';
+  //   if (typeof data === 'object') {
+  //     for (let propertyName in data) {
+  //       queryString += (queryString.length === 0 ? '' : '&') + propertyName + '=' + encodeURIComponent(data[propertyName]);
+  //     }
+  //   }
+  //
+  //   xhr.open('POST', url, true);
+  //   xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+  //   xhr.send(queryString);
+  // }
 
   public clear(): void {
     this.ctx.clearRect(0, 0, this.width, this.height);

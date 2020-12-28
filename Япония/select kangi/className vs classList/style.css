@@ -1,0 +1,13 @@
+.init{
+    background-color: red;
+    color: aqua;
+    border: 1px solid black;
+}
+.selected{
+    background-color: navy;
+    color:white;
+}
+.selected1{
+    background-color: green;
+    color:yellow;
+}

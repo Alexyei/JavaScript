@@ -1,0 +1,60 @@
+<template id="toggle-button-template">
+  <style>
+    :host {
+      all: initial;
+      contain: content;
+      padding: .25em 1em;
+      position: relative;
+      display: inline-block;
+      color: var(--color, #f3f3f3);
+      background-color: var(--main-clr, #615acc);
+    }
+    
+    :host([hidden]) {
+      display: none;
+    }
+    
+    .focus,
+    .mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .focus.on {
+      box-shadow: inset 0 0 0 0.1em #3f51b5;
+    }
+    
+    :host,
+    .mask {
+      user-select: none; 
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .mask {
+      padding: .25em 0;
+      background-color: var(--color, #f3f3f3);
+      color: var(--main-clr, #615acc);
+      text-align: center;
+      white-space: nowrap;
+      pointer-events: none;
+      clip-path: circle(0 at 50% 50%);
+    }
+  </style>
+  
+  <slot>Press me!</slot>
+  <div class="mask" id="mask">
+    <slot name="pressed">Unpress me!</slot>
+  </div>
+  <div class="focus" id="focus"></div>
+</template>
+
+<!----------------Usage------------------->
+
+<toggle-button>
+  <span>Check me!</span>
+  <span slot="pressed">Checked!</span>
+</toggle-button>

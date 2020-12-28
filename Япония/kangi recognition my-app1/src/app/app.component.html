@@ -1,0 +1,20 @@
+<h3>Draw a kanji please</h3>
+<!--Синтаксис binding [width]="400" [color]="'magenta'" [height]="250"-->
+<!--(done)="suggestions = $event" twoWay binding -->
+<!--suggestions перменная класса AppComponent-->
+<!--$event базовая переменная события-->
+
+<!--#kr локальная ссылка на элемент в шаблоне-->
+<lib-kanji-recognition #kr [width]="400" [color]="'magenta'" [height]="250" (done)="suggestions = $event">
+  Canvas isn't supported in this browser
+</lib-kanji-recognition>
+<!--Пользовательский binding для события click мыши получение данных от шаблона (html) к компоненту kanji.ts-->
+<button (click)="kr.clear()">Clear</button>
+
+<h3>List of suggestions</h3>
+<ul>
+<!--  Строковая интерполяция {{kangi}} значение переменной из цикла слева-->
+<!--  Директивы ng из модуля FormsModule-->
+<!--  Если деректива начинается со * она меняет html-->
+  <li *ngFor="let kanji of suggestions">{{kanji}}</li>
+</ul>

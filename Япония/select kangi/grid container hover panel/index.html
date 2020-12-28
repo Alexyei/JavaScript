@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="center">
+    <div class="container">
+        <div class="grid-panel" id="panel">
+            <div class="grid-panel-item grid-first">
+                <div class="grid-panel-text-item">
+                    <h1>h1</h1>
+                    <p>Текст 1</p>
+                </div>
+            </div>
+            <div class="grid-panel-item grid-second" onclick="this.style.backgroundColor='green'">
+                <div class="grid-panel-text-item">
+                    <h1>h2</h1>
+                    <p>текст 2</p>
+                </div>
+            </div>
+            <div class="grid-panel-item grid-fourth" onclick="document.getElementById('panel').style.pointerEvents='none';document.getElementById('hp').style.width='100%';">
+                <div class="grid-panel-text-item-btn">
+                    <p>текст 3</p>
+                </div>
+            </div>
+            <div class="grid-panel-item grid-five">
+                <div class="grid-panel-text-item-btn">
+                    <p>Текст 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="hover-panel" id="hp"></div>
+    </div>
+
+</div>
+</body>
+</html>

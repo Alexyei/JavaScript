@@ -1,0 +1,90 @@
+/*@import url('https://fonts.googleapis.com/css?family=Abel');*/
+
+html, body {
+    background: #FCEEB5;
+    /*font-family: Roboto, Arial, Verdana, sans-serif;*/
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 60%;
+    /*height: 100%;*/
+}
+
+.grid-panel {
+
+height: 70vh;
+    /*width: 850px;*/
+    /*height: 450px;*/
+    /*background: #FCEEB5;*/
+    /*background-color: #fff;*/
+    /*background: linear-gradient(#f8f8f8, #fff);*/
+    /*box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);*/
+    /*border-radius: 6px;*/
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    /*justify-items: center;*/
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-panel-item{
+    background-color: blue;
+    /*border: 1px solid black;*/
+    /*border-radius: 6px;*/
+    /*box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);*/
+    text-align: center;
+
+
+}
+
+/*.grid-first, .grid-second, .grid-third{*/
+/*    grid-column: span 4;*/
+/*}*/
+
+/*.grid-fourth, .grid-five{*/
+/*    grid-column: span 6;*/
+/*}*/
+
+.grid-panel-text-item{
+    padding: 20px 0;
+    position: relative;
+
+}
+
+.grid-panel-text-item h1{
+    margin: 0;
+    font-size: 72px;
+    /*font-size: 10vh;*/
+}
+
+.grid-panel-text-item p{
+    font-size: 30px;
+    /*font-size: 4vh;*/
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.grid-panel-text-item-btn{
+    padding: 20px 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.grid-panel-text-item-btn p{
+    font-size: 30px;
+    /*font-size: 5vh;*/
+    font-weight: bold;
+    margin: 0;
+}

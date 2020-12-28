@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Midpoint circle</title>
+    <style type="text/css">
+        html, body { margin: 0; padding: 0; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+<div align="center">
+    <canvas id="circleCanvas" width="500" height="500" style="background-color: black;">
+        <font color="#808080">Извините, Ваш браузер не поддерживает тег canvas</font>
+    </canvas>
+</div>
+<script type="text/javascript">
+    function Circles() {
+        var imageData, canvas, ctx; //Данные рисунка, канва, контекст
+
+        this.getPixel = function (x, y) {  //Метод для чтения цвета пиксела
+            var index = (y * imageData.width + x) * 4;
+            return {
+                R: imageData.data[index+0],
+                G: imageData.data[index+1],
+                B: imageData.data[index+2],
+                A: imageData.data[index+3]
+            };
+        }
+
+        this.putPixel = function (x, y, c) {//Метод для установки цвета пиксела
+            var index = (y * imageData.width + x) * 4;
+            imageData.data[index+0] = c.R;
+            imageData.data[index+1] = c.G;
+            imageData.data[index+2] = c.B;
+            imageData.data[index+3] = c.A;
+        }
+
+        //Подготовка образа по размеру канвы
+        canvas = document.getElementById ('circleCanvas');
+        ctx = canvas.getContext ('2d');
+        imageData = ctx.createImageData (canvas.width,canvas.height);
+
+        //Рисуем пискел(ы) в данных
+        var x=Math.floor(imageData.width/2), y=Math.floor(imageData.height/2), r=255, g=255, b=255, a=255;
+        putPixel (x, y, {R:r, G:g, B:b, A:a});
+
+        //Выводим отрисованное на канву
+        ctx.putImageData (imageData, 0, 0);
+
+        //Читаем и выводим цвет пиксела
+        var c = getPixel (x,y);
+        //alert (c.R+','+c.G+','+c.B+','+c.A);
+
+        //Рисование окружности методом Брезенхэма
+        this.drawCircle = function (X1, Y1, R, C) {
+            // R - радиус, X1, Y1 - координаты центра, C - цвет
+            var x = 0, y = R;
+            var delta = 1 - 2 * R;
+            var error = 0;
+            while (y >= 0) {
+                putPixel (X1 + x, Y1 + y, C);
+                putPixel (X1 + x, Y1 - y, C);
+                putPixel (X1 - x, Y1 + y, C);
+                putPixel (X1 - x, Y1 - y, C);
+                error = 2 * (delta + y) - 1;
+                if (delta < 0 && error <= 0) {
+                    delta += 2 * ++x + 1; continue
+                }
+                error = 2 * (delta - x) - 1;
+                if (delta > 0 && error > 0) {
+                    delta += 1 - 2 * --y; continue;
+                }
+                x++;
+                delta += 2 * (x - y);
+                y--;
+            }
+        }
+
+        //Рисуем 10 случайных окружностей
+        for (var i=0; i<10; i++) {
+            var x = Math.floor(Math.random()*canvas.width);
+            var y = Math.floor(Math.random()*canvas.height);
+            var r = Math.floor(Math.random()*Math.min(canvas.width/2,canvas.height/2));
+            drawCircle(x,y,r,{
+                R: Math.floor(Math.random()*256),
+                G: Math.floor(Math.random()*256),
+                B: Math.floor(Math.random()*256),
+                A: 255});
+        }
+        ctx.putImageData (imageData, 0, 0); //и выводим их
+
+    } //Конец основной функции
+
+    window.addEventListener("load", Circles); //Вызов после загрузки страницы
+</script>
+<noscript>
+    <div align="center">
+        Извините, для работы приложения нужен включённый Javascript
+    </div>
+</noscript>
+
+</body></html>
