@@ -29,14 +29,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/перебор объектов.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.дата и время.js">
+    <configuration name="дата и время.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/дата и время.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="перебор объектов.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="перебор объектов.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="деструктуризация.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/деструктуризация.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="camelcase.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/camelcase.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.camelcase.js" />
+      <item itemvalue="Node.js.перебор объектов.js" />
+      <item itemvalue="Node.js.деструктуризация.js" />
+      <item itemvalue="Node.js.дата и время.js" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.дата и время.js" />
+        <item itemvalue="Node.js.деструктуризация.js" />
+        <item itemvalue="Node.js.перебор объектов.js" />
         <item itemvalue="Node.js.camelcase.js" />
       </list>
     </recent_temporary>
@@ -52,28 +71,12 @@
       <workItem from="1608834492444" duration="2007000" />
       <workItem from="1609082868890" duration="639000" />
       <workItem from="1609143670812" duration="14000" />
+      <workItem from="1609163037578" duration="2708000" />
+      <workItem from="1609252590200" duration="3627000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1609092670801">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609092670801" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1609092670801">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609092670801" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1609092670801">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609092670801" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1609092670801">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609092670801" />
   </component>
 </project>
