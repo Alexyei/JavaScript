@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,36 +28,42 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/перебор объектов.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.дата и время.js">
-    <configuration name="дата и время.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/дата и время.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.callback.js">
+    <configuration name="bind.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bind.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="перебор объектов.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="перебор объектов.js" working-dir="$PROJECT_DIR$">
+    <configuration name="callback.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/callback.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="деструктуризация.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/деструктуризация.js" working-dir="$PROJECT_DIR$">
+    <configuration name="class.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/class.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="camelcase.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/camelcase.js" working-dir="$PROJECT_DIR$">
+    <configuration name="errors.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/errors.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="protorype.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/protorype.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.camelcase.js" />
-      <item itemvalue="Node.js.перебор объектов.js" />
-      <item itemvalue="Node.js.деструктуризация.js" />
-      <item itemvalue="Node.js.дата и время.js" />
+      <item itemvalue="Node.js.bind.js" />
+      <item itemvalue="Node.js.protorype.js" />
+      <item itemvalue="Node.js.class.js" />
+      <item itemvalue="Node.js.errors.js" />
+      <item itemvalue="Node.js.callback.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.дата и время.js" />
-        <item itemvalue="Node.js.деструктуризация.js" />
-        <item itemvalue="Node.js.перебор объектов.js" />
-        <item itemvalue="Node.js.camelcase.js" />
+        <item itemvalue="Node.js.callback.js" />
+        <item itemvalue="Node.js.errors.js" />
+        <item itemvalue="Node.js.class.js" />
+        <item itemvalue="Node.js.protorype.js" />
+        <item itemvalue="Node.js.bind.js" />
       </list>
     </recent_temporary>
   </component>
@@ -73,10 +80,43 @@
       <workItem from="1609143670812" duration="14000" />
       <workItem from="1609163037578" duration="2708000" />
       <workItem from="1609252590200" duration="3627000" />
+      <workItem from="1609325983756" duration="6660000" />
+      <workItem from="1609402675378" duration="5000" />
+      <workItem from="1609510306875" duration="4409000" />
+      <workItem from="1609680190935" duration="1631000" />
+      <workItem from="1609861020020" duration="3228000" />
+      <workItem from="1609937432041" duration="6172000" />
+      <workItem from="1610031372466" duration="2033000" />
+      <workItem from="1610191556641" duration="4310000" />
+      <workItem from="1610280597222" duration="2607000" />
+      <workItem from="1610369514084" duration="190000" />
+      <workItem from="1610531346816" duration="2301000" />
+      <workItem from="1610537468595" duration="1258000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/JSON.js</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/class.js</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/class.js</url>
+          <line>58</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
