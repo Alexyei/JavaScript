@@ -34,36 +34,36 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/перебор объектов.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.callback.js">
-    <configuration name="bind.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bind.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.bitwise-operators.js">
+    <configuration name="генераторы.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/генераторы.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="async-await.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/async-await.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="bitwise-operators.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bitwise-operators.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="callback.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/callback.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="class.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/class.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="errors.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/errors.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="protorype.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/protorype.js" working-dir="$PROJECT_DIR$">
+    <configuration name="proxy.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/proxy.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.bind.js" />
-      <item itemvalue="Node.js.protorype.js" />
-      <item itemvalue="Node.js.class.js" />
-      <item itemvalue="Node.js.errors.js" />
       <item itemvalue="Node.js.callback.js" />
+      <item itemvalue="Node.js.async-await.js" />
+      <item itemvalue="Node.js.генераторы.js" />
+      <item itemvalue="Node.js.proxy.js" />
+      <item itemvalue="Node.js.bitwise-operators.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.bitwise-operators.js" />
+        <item itemvalue="Node.js.proxy.js" />
+        <item itemvalue="Node.js.генераторы.js" />
+        <item itemvalue="Node.js.async-await.js" />
         <item itemvalue="Node.js.callback.js" />
-        <item itemvalue="Node.js.errors.js" />
-        <item itemvalue="Node.js.class.js" />
-        <item itemvalue="Node.js.protorype.js" />
-        <item itemvalue="Node.js.bind.js" />
       </list>
     </recent_temporary>
   </component>
@@ -92,31 +92,15 @@
       <workItem from="1610369514084" duration="190000" />
       <workItem from="1610531346816" duration="2301000" />
       <workItem from="1610537468595" duration="1258000" />
+      <workItem from="1610885457681" duration="2507000" />
+      <workItem from="1610974302881" duration="1784000" />
+      <workItem from="1611148416883" duration="1853000" />
+      <workItem from="1611231791343" duration="1521000" />
+      <workItem from="1611490006520" duration="2376000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/JSON.js</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/class.js</url>
-          <line>43</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/class.js</url>
-          <line>58</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
