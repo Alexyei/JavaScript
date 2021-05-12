@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #field {
+            width: 200px;
+            border: 10px groove black;
+            background-color: #00FF00;
+            position: relative;
+        }
+
+        #ball {
+            position: absolute;
+            /*нужны для свойств-метрик JS*/
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="field">
+<img src="https://en.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+</div>
+<script>
+
+// console.log(field.clientWidth);
+// console.log(field.clientHeight);
+// console.log(ball.clientWidth);
+// console.log(ball.clientHeight);
+// console.log((field.clientWidth-ball.clientWidth)/2+"px");
+// console.log((field.clientHeight-ball.clientHeight)/2+"px");
+ball.style.left = (field.clientWidth-ball.clientWidth)/2+"px";
+ball.style.top = (field.clientHeight-ball.clientHeight)/2+"px";
+</script>
+</body>
+</html>

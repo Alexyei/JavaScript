@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div data-widget-name="menu">Choose the genre</div>
+
+<script>
+    let el = document.querySelector("[data-widget-name]");
+    console.log(el.dataset.widgetName);
+    console.log(el.firstChild.data);
+    console.log(el.firstChild.textContent);
+    console.log(el.innerHTML);
+</script>
+</body>
+</html>

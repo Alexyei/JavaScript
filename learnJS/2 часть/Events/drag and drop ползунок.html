@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .slider {
+            border-radius: 5px;
+            background: #E0E0E0;
+            background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+            width: 310px;
+            height: 15px;
+            margin: 5px;
+        }
+
+        .thumb {
+            width: 10px;
+            height: 25px;
+            border-radius: 3px;
+            position: relative;
+            left: 10px;
+            top: -5px;
+            background: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="slider" class="slider">
+    <div class="thumb"></div>
+</div>
+
+<script>
+    let thumb = document.querySelector(".thumb");
+    let parentRect = thumb.parentElement.getBoundingClientRect()
+    thumb.onmousedown = function(event) {
+
+        let shiftX = event.clientX - thumb.getBoundingClientRect().left;
+        let shiftY = event.clientY - thumb.getBoundingClientRect().top;
+
+        thumb.style.position = 'absolute';
+        thumb.style.zIndex = 1000;
+        thumb.style.top = event.pageY - shiftY + 'px';
+        document.body.append(thumb);
+
+        moveAt(event.pageX, event.pageY);
+
+        // переносит мяч на координаты (pageX, pageY),
+        // дополнительно учитывая изначальный сдвиг относительно указателя мыши
+        function moveAt(pageX, pageY) {
+            thumb.style.left = Math.min(Math.max( pageX - shiftX, parentRect.left), parentRect.right-thumb.getBoundingClientRect().width) + 'px';
+
+           // ball.style.top = pageY - shiftY + 'px';
+        }
+
+        function onMouseMove(event) {
+            moveAt(event.pageX, event.pageY);
+        }
+
+        // передвигаем мяч при событии mousemove
+        document.addEventListener('mousemove', onMouseMove);
+
+        // отпустить мяч, удалить ненужные обработчики
+        document.onmouseup = function() {
+            document.removeEventListener('mousemove', onMouseMove);
+            document.onmouseup = null;
+        };
+
+    };
+
+    thumb.ondragstart = function() {
+        return false;
+    };
+</script>
+
+</body>
+</html>

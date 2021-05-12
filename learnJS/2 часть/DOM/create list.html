@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+
+</ul>
+<script>
+    function createList(parent){
+        while(elText = prompt("Введите текст для элемента списка")){
+            li = document.createElement("li");
+            li.textContent = elText;
+            parent.append(li);
+        }
+    }
+    createList(document.querySelector("ul"));
+</script>
+</body>
+</html>

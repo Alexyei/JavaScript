@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #field {
+            width: 200px;
+            height: 150px;
+            border: 10px solid black;
+            background-color: #00FF00;
+            overflow: hidden;
+
+        }
+
+        #ball {
+            position: absolute;
+            /*нужны для свойств-метрик JS*/
+            width: 40px;
+            height: 40px;
+            transition: .4s;
+            /*left: 10px;*/
+            /*top: 100px;*/
+        }
+    </style>
+</head>
+
+<body style="height:2000px">
+
+Нажмите на поле для перемещения мяча.
+<br> Мяч не должен выходить за границы поля.
+
+
+<div id="field">
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . .
+</div>
+
+<script>
+    // получение абсолютных координат
+    function getCoords(event) {
+        return {
+            X: event.clientX + pageYOffset,
+            Y: event.clientY + pageXOffset,
+        };
+    }
+    let ball = document.querySelector("#ball");
+    let field = document.querySelector("#field");
+
+    // start position
+        ball.style.left = field.clientLeft + field.offsetLeft +"px";
+        ball.style.top = field.clientTop + field.offsetTop +"px";
+
+    // ball.style.left = (field.clientWidth-ball.clientWidth)/2+"px";
+    // ball.style.top = (field.clientHeight-ball.clientHeight)/2+"px";
+
+
+    field.addEventListener("click", (event) => {
+        let coords = getCoords(event);
+        // console.log(coords.X + ":" + coords.Y);
+        // let ball = document.querySelector("#ball");
+        // let field = event.currentTarget;
+        let limits = {
+            minX: field.clientLeft + field.offsetLeft,
+            maxX: field.offsetWidth - field.clientLeft + field.offsetLeft - (ball.clientWidth),
+            minY: field.clientTop + field.offsetTop,
+            maxY: field.offsetHeight - field.clientTop + field.offsetTop - (ball.clientHeight),
+        };
+
+        ball.style.left = Math.min(Math.max(coords.X, limits.minX), limits.maxX) + "px";
+        ball.style.top = Math.min(Math.max(coords.Y, limits.minY), limits.maxY) + "px";
+    });
+</script>
+</body>
+</html>

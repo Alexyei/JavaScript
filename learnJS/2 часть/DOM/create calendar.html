@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #E6E6E6;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div id="calendar"></div>
+
+<script>
+    function createCalendar(elem, year, month) {
+        function getLocalDay(day) {
+            return day ? day : 7;
+        }
+
+        // 0 - крайний день месяца
+        let monthLength = (new Date(year, month, 0)).getDate();
+        let day = getLocalDay((new Date(year, month - 1, 1)).getDay());
+        console.log(day);
+        let weekCount = Math.ceil((monthLength - (7-day+1)) / 7) + 1;
+
+        function createHtmLTable(parent, rowCount, colCount, header = true) {
+            function createRow(tag = "td") {
+                // let tag = header ? "th" : "td";
+                let row = document.createElement("tr");
+
+                for (let i = 0; i < colCount; ++i) {
+                    row.append(document.createElement(tag))
+                }
+
+                return row;
+            }
+
+            if (header) parent.append(createRow("th"));
+
+            for (let i = 0; i < rowCount; ++i) parent.append(createRow());
+
+        }
+
+        createHtmLTable(document.querySelector("#calendar"), weekCount, 7);
+
+        elem.querySelectorAll("th").forEach((el, i) => el.textContent = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"][i]);
+
+        let data = elem.querySelectorAll("td");
+        for (let i = day - 1, j = 1; j <= monthLength; ++i, ++j) {
+            data[i].textContent = j;
+        }
+    }
+
+    createCalendar(calendar, 2012, 9);
+</script>
+</body>
+</html>

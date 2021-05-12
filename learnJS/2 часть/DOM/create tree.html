@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="tree1"></div>
+<div id="tree2"></div>
+<script>
+    let data = {
+        "Рыбы": {
+            "форель": {},
+            "лосось": {}
+        },
+
+        "Деревья": {
+            "Огромные": {
+                "секвойя": {},
+                "дуб": {}
+            },
+            "Цветковые": {
+                "яблоня": {},
+                "магнолия": {}
+            }
+        }
+    };
+
+    function createTree(container, data) {
+        if (Object.keys(data).length) {
+            let ul = document.createElement("ul");
+            for ([key, value] of Object.entries(data)) {
+                let li = document.createElement("li");
+                li.textContent = key;
+                ul.append(li)
+                createTree(li, value);
+            }
+            container.append(ul);
+        }
+    }
+
+    createTree(document.querySelector("#tree2"), data);
+
+    function createStrTree(container, data) {
+
+        function createStr(data) {
+            if (Object.keys(data).length) {
+                let ul = "<ul>";
+                for ([key, value] of Object.entries(data)) {
+                    let li = `<li>${key}`;
+                    ul+= li
+                    ul+=createStr(value)+"</li>";
+                }
+                return ul + "</ul>";
+            }
+            return "";
+        }
+
+
+        container.innerHTML = createStr(data);
+    }
+
+    createStrTree(document.querySelector("#tree1"), data);
+</script>
+</body>
+</html>

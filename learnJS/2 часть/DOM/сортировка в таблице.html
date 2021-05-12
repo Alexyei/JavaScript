@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Pete</td>
+        <td>Brown</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Ann</td>
+        <td>Lee</td>
+        <td>5</td>
+    </tr>
+</table>
+
+<script>
+
+    document.querySelector("tr").after(
+        ...(Array.from(document.querySelectorAll("tr"))
+            .slice(1).sort((a,b) =>{
+                    // a = a.firstElementChild.firstChild.data;
+                    // b = b.firstElementChild.firstChild.data;
+                    // if (a > b) {
+                    //     return 1;
+                    // }
+                    // if (a < b) {
+                    //     return -1;
+                    // }
+                    // // a должно быть равным b
+                    // return 0;
+                   return a.firstElementChild.firstChild.data > b.firstElementChild.firstChild.data ? 1 : -1;
+                }
+
+            ))
+    );
+
+
+    // let sortedRows = Array.from(table.rows)
+    //     .slice(1)
+    //     .sort((rowA, rowB) => rowA.cells[0].innerHTML > rowB.cells[0].innerHTML ? 1 : -1);
+    //
+    // table.tBodies[0].append(...sortedRows);
+</script>
+</body>
+</html>

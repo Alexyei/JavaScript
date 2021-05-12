@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Прокрути меня</h1>
+
+<script>
+    // for (let i = 0; i < 20; ++i)
+    //     addDate();
+    //
+    // function addDate() {
+    //     let container = document.createElement("p");
+    //     container.innerHTML = Date();
+    //     console.log(container);
+    //     document.body.append(container);
+    // }
+    //
+    // window.addEventListener('scroll', function () {
+    //     // document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+    //     addDate();
+    // });
+
+    function populate() {
+        while(true) {
+            let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+            if (windowRelativeBottom > document.documentElement.clientHeight + 100) break;
+            document.body.insertAdjacentHTML("beforeend", `<p>Date: ${new Date()}</p>`);
+        }
+    }
+
+    window.addEventListener('scroll', populate);
+
+    populate(); // инициализация документа
+</script>
+</body>
+</html>

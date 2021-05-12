@@ -31,8 +31,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/перебор объектов.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2 часть/Events" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Наталия\Desktop\Новая папка\JavaScript\learnJS\2 часть\Events" />
+      <recent name="C:\Users\Наталия\Desktop\Новая папка\JavaScript\learnJS\2 часть" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Наталия\Desktop\Новая папка\JavaScript\learnJS\2 часть\DOM" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.bitwise-operators.js">
     <configuration name="генераторы.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/генераторы.js" working-dir="$PROJECT_DIR$">
@@ -97,6 +106,23 @@
       <workItem from="1611148416883" duration="1853000" />
       <workItem from="1611231791343" duration="1521000" />
       <workItem from="1611490006520" duration="2376000" />
+      <workItem from="1611665390710" duration="2181000" />
+      <workItem from="1611752947437" duration="3281000" />
+      <workItem from="1611835539367" duration="6131000" />
+      <workItem from="1611927299003" duration="3803000" />
+      <workItem from="1612010199526" duration="1584000" />
+      <workItem from="1612016887562" duration="10000" />
+      <workItem from="1612104462717" duration="3187000" />
+      <workItem from="1612192328770" duration="4096000" />
+      <workItem from="1612273400596" duration="3096000" />
+      <workItem from="1612283068654" duration="20000" />
+      <workItem from="1612444370381" duration="5647000" />
+      <workItem from="1612532606949" duration="2387000" />
+      <workItem from="1612614640102" duration="3569000" />
+      <workItem from="1612699745882" duration="7886000" />
+      <workItem from="1612788525642" duration="919000" />
+      <workItem from="1613050650695" duration="1027000" />
+      <workItem from="1613052195768" duration="83000" />
     </task>
     <servers />
   </component>

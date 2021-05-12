@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hour {
+            color: orange;
+        }
+
+        .min {
+            color: green;
+        }
+
+        .sec {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<!-- клик по этой кнопке вызовет clockStart() -->
+<input type="button" onclick="clockStart()" value="Старт">
+
+<!-- клик по этой кнопке вызовет clockStop() -->
+<input type="button" onclick="clockStop()" value="Стоп">
+<script>
+    let clock = '<div id="clock">' +
+        '<span class="hour"></span>:' +
+        '<span class="min"></span>:' +
+        '<span class="sec"></span>' +
+        '</div>'
+
+    document.body.insertAdjacentHTML("afterbegin", clock);
+
+    let timer;
+
+    function showTime() {
+        let now = new Date();
+        document.querySelector(".hour").textContent = now.getHours().toString().padStart(2, "0");
+        document.querySelector(".min").textContent = now.getMinutes().toString().padStart(2, "0");
+        document.querySelector(".sec").textContent = now.getSeconds().toString().padStart(2, "0");
+    }
+
+    function clockStart() {
+        if (!timer) {
+            timer = setInterval(() => {
+                showTime();
+            }, 1000);
+            showTime();
+        }
+    }
+
+    function clockStop() {
+        clearInterval(timer);
+        timer = null;
+    }
+
+    clockStart();
+</script>
+</body>
+</html>
